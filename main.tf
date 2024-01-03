@@ -16,15 +16,15 @@ module "iampolicy" {
 }
 
 resource "aws_s3_bucket" "example_bucket" {
-    bucket = "${var.bucket_name}-aws"
-    acl    = "private"
-    
-    versioning {
-        enabled = var.enable_versioning
-    }
-    
-    tags = {
-        Name        = "My bucket"
-        Environment = "Dev"
-    }
+  bucket = "${var.bucket_name}-aws"
+  acl    = "private"
+
+  versioning {
+    enabled = var.enable_versioning
+  }
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
 }
