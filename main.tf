@@ -16,7 +16,7 @@ module "iampolicy" {
 }
 
 resource "aws_s3_bucket" "example_bucket" {
-    bucket = ${var.bucket_name}-aws
+    bucket = "${var.bucket_name}-aws"
     acl    = "private"
     
     versioning {
