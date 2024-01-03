@@ -15,7 +15,9 @@ This terraform module will create an S3 Bucket.
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.0 |
 
 ## Modules
 
@@ -26,7 +28,9 @@ No providers.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [aws_s3_bucket.example_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) | resource |
 
 ## Inputs
 
