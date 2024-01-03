@@ -11,7 +11,7 @@ module "test_s3_bucket" {
 
 module "iampolicy" {
   source    = "tfe.karla-gabriel.sbx.hashidemos.io/kg-dev/iampolicy/aws"
-  version   = "1.0.1"
+  version   = "1.1.0"
   role_name = "kg-test-role"
 }
 
