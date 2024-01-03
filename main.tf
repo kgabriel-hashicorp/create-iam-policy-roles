@@ -14,3 +14,17 @@ module "iampolicy" {
   version   = "1.0.1"
   role_name = "kg-test-role"
 }
+
+resource "aws_s3_bucket" "example_bucket" {
+    bucket = ${var.bucket_name}-aws
+    acl    = "private"
+    
+    versioning {
+        enabled = var.enable_versioning
+    }
+    
+    tags = {
+        Name        = "My bucket"
+        Environment = "Dev"
+    }
+}
