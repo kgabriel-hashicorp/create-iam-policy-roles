@@ -22,6 +22,8 @@ jobs:
       uses: hashicorp/setup-terraform@v3
       with:
         terraform_version: "1.0.0"
+        cli_config_credentials_token: ${{ secrets.TF_ORG_TOKEN }}
+        cli_config_credentials_hostname: "tfe.karla-gabriel.sbx.hashidemos.io"
         
     - name: Terraform Init
       id: init
