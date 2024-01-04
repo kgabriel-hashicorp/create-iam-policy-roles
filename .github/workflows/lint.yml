@@ -24,7 +24,7 @@ jobs:
         terraform_version: "1.0.0"
         cli_config_credentials_token: ${{ secrets.TF_ORG_TOKEN }}
         cli_config_credentials_hostname: "tfe.karla-gabriel.sbx.hashidemos.io"
-        
+
     - name: Terraform Init
       id: init
       run: terraform init
@@ -36,4 +36,4 @@ jobs:
     - name: TFLint
       run: |
         tflint --init
-        tflint --recursive --format=compact
+        tflint --recursive --format=json
