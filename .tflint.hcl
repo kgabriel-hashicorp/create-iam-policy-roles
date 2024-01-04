@@ -21,6 +21,11 @@ rule "terraform_module_version" {
 }
 
 # Enforces naming conventions for resources, data sources, etc.
+rule "terraform_required_version" {
+  enabled = false
+}
+
+# Enforces naming conventions for resources, data sources, etc.
 rule "terraform_naming_convention" {
   enabled = true
   format  = "snake_case"
